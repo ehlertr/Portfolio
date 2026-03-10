@@ -1,0 +1,44 @@
+.recruiter-banner {
+    background: linear-gradient(135deg, var(--primary-purple), var(--dark-purple));
+    color: white;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 50;
+  }
+  
+  .recruiter-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+  }
+  
+  .recruiter-icon {
+    font-size: 1.5rem;
+  }
+  
+  .recruiter-content p {
+    margin: 0;
+    color: white;
+  }
+  
+  .recruiter-content strong {
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .recruiter-banner {
+      padding: 1rem;
+    }
+  
+    .recruiter-content {
+      gap: 0.75rem;
+      flex-direction: column;
+    }
+  
+    .recruiter-icon {
+      font-size: 1.2rem;
+    }
+  }

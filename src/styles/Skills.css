@@ -1,0 +1,113 @@
+.skills {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skills-container {
+    width: 100%;
+  }
+  
+  .skills-intro {
+    font-size: 1.1rem;
+    color: var(--warm-gray);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    line-height: 1.7;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .skill-category {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(245, 158, 11, 0.05));
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+  }
+  
+  .skill-category:hover {
+    border-color: var(--primary-purple);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1);
+  }
+  
+  .skill-category h3 {
+    color: var(--primary-purple);
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .skill-item {
+    background-color: white;
+    color: var(--warm-gray);
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    border-color: var(--primary-purple);
+    color: var(--primary-purple);
+    background-color: var(--cream);
+  }
+  
+  .experience-highlights {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(245, 158, 11, 0.05));
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid var(--primary-purple);
+  }
+  
+  .experience-highlights h3 {
+    color: var(--dark-bg);
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience-highlights ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .experience-highlights li {
+    color: var(--warm-gray);
+    padding: 0.75rem 0;
+    padding-left: 1.75rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .experience-highlights li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-warm);
+    font-weight: bold;
+  }
+  
+  .experience-highlights strong {
+    color: var(--dark-bg);
+  }
+  
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .experience-highlights {
+      padding: 1.5rem;
+    }
+  }

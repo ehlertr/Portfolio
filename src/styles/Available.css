@@ -1,0 +1,41 @@
+.available {
+    padding: 1.5rem 2rem;
+    background-color: var(--cream);
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .available-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .available-text {
+    color: var(--warm-gray);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.6;
+  }
+  
+  .available-link {
+    color: var(--primary-purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .available-link:hover {
+    color: var(--dark-bg);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .available {
+      padding: 1rem 1.5rem;
+    }
+  
+    .available-text {
+      font-size: 0.9rem;
+    }
+  }
